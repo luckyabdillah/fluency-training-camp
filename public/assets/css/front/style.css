@@ -1,0 +1,23 @@
+:root {
+    --own-primary: #5d87ff;
+    --own-primary-rgb: 93, 135, 255;
+    --bs-secondary-rgb: 108, 117, 125;
+    --own-bg-opacity: 0.1;
+}
+
+.navbar {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    /* background-color: var(--own-primary); */
+    /* opacity: 0.1; */
+    /* background-color: rgba(93, 136, 255, 0.1); */
+    background-color: RGBA(var(--own-primary-rgb), 0.1) !important;
+    /* background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important; */
+    /* background-color: #fff; */
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    /* background-color: #5d87ff; */
+    /* background-color: rgba(93, 136, 255, 0.1); */
+    /* background-color: RGBA(var(--own-primary-rgb), 0.1) !important; */
+}

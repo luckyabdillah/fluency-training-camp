@@ -1,0 +1,13 @@
+.note-form-control {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.note-image-input {
+    margin-left: 5px;
+}
+
+.form-control,
+.btn-close {
+    box-shadow: unset !important;
+}
