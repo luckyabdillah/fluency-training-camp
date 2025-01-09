@@ -1,13 +1,45 @@
-.note-form-control {
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-
-.note-image-input {
-    margin-left: 5px;
+.btn {
+    border-radius: .5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .form-control,
-.btn-close {
+.btn-close,
+.navbar-toggler {
     box-shadow: unset !important;
 }
+
+.nav-item .nav-link.active {
+    color: #162d81 !important;
+    font-weight: 500;
+    /* border-bottom: 1px solid #162d81; */
+}
+
+/* .card-img-top {
+    max-height: 300px;
+} */
+
+.card {
+    border-radius: 1rem;
+}
+
+.card-img-top {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+@media (max-width: 976px) {
+    .offcanvas {
+        max-width: 80%;
+    }
+}
+
+/* .nav-item .nav-link.active::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #162d81;
+} */

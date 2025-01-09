@@ -1,23 +1,87 @@
+@import "../../vendor/theme/css/icons/tabler-icons/tabler-icons.css";
+
 :root {
     --own-primary: #5d87ff;
     --own-primary-rgb: 93, 135, 255;
+    --own-secondary: #162d81;
+    --own-secondary-rgb: 22, 45, 129;
     --bs-secondary-rgb: 108, 117, 125;
     --own-bg-opacity: 0.1;
+    --own-bg-primary-subtle: RGBA(var(--own-primary-rgb), 0.1)
+}
+
+.btn-my-primary {
+    background-color: #162d81;
+    color: #fff;
+}
+
+.btn-my-primary:hover {
+    background-color: #102266;
+    color: #fff;
+}
+
+.btn-outline-my-primary {
+    border: 1px solid #162d81;
+    color: #162d81;
+}
+
+.btn-outline-my-primary:hover {
+    background-color: #162d81;
+    color: #fff;
+}
+
+.btn-my-primary:active {
+    background-color: #162d81 !important;
+    color: #fff !important;
+}
+
+.bg-primary-subtle {
+    background-color: var(--own-bg-primary-subtle) !important;
+}
+
+.bg-secondary-solid {
+    color: #fff;
+    background-color: var(--own-secondary);
+}
+
+.brand-logo img {
+    max-width: 30px;
+    margin-top: -2px;
 }
 
 .navbar {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    /* background-color: var(--own-primary); */
-    /* opacity: 0.1; */
-    /* background-color: rgba(93, 136, 255, 0.1); */
-    background-color: RGBA(var(--own-primary-rgb), 0.1) !important;
-    /* background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important; */
-    /* background-color: #fff; */
 }
 
 body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    /* background-color: #5d87ff; */
-    /* background-color: rgba(93, 136, 255, 0.1); */
-    /* background-color: RGBA(var(--own-primary-rgb), 0.1) !important; */
+}
+
+nav#hero {
+    padding-top: 8em;
+    /* position: relative; */
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    transform: translate(5px);
+}
+
+::placeholder {
+    opacity: 0.55 !important;
+    transition: all 0.25s ease;
+    /* font-size: .9em; */
+    /* color: #5d87ff; */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    opacity: 0.55 !important;
+    transition: all 0.25s ease;
+    /* font-size: .9em; */
+    /* color: #5d87ff; */
+}
+
+footer.footer {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }

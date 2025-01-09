@@ -29,13 +29,24 @@
             </div>
         </div>
     </div>
+    
+    @if (session()->has('success'))
+        <div class="flash-data" data-flash="{{ session('success') }}"></div>
+    @endif
+    @if (session()->has('failed'))
+        <div class="flash-data-failed" data-flash="{{ session('failed') }}"></div>
+    @endif
+
     <script src="{{ asset('assets/vendor/theme/libs/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/theme/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/theme/js/sidebarmenu.js') }}"></script>
+    {{-- <script src="{{ asset('assets/vendor/theme/js/sidebarmenu.js') }}"></script> --}}
     <script src="{{ asset('assets/vendor/theme/js/app.min.js') }}"></script>
     {{-- <script src="{{ asset('assets/vendor/theme/libs/apexcharts/dist/apexcharts.min.js') }}"></script> --}}
     <script src="{{ asset('assets/vendor/theme/libs/simplebar/dist/simplebar.js') }}"></script>
-    <script src="{{ asset('assets/vendor/theme/js/dashboard.js') }}"></script>
+    {{-- <script src="{{ asset('assets/vendor/theme/js/dashboard.js') }}"></script> --}}
+    <script src="{{ asset('assets/vendor/libs/sweetalert/sweetalert2.all.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dashboard/script.js') }}"></script>
+    <script src="{{ asset('assets/js/alert.js') }}"></script>
     @stack('scripts')
 </body>
 </html>
